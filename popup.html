@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>South Park randomizer</title>
+    <script src="popup.js"></script>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Open+Sans"
@@ -84,6 +85,7 @@
         opacity: 1;
         transition: opacity 0.2s ease-in-out;
         margin-right: 20px;
+        cursor: pointer;
       }
 
       .flex:hover {
@@ -105,7 +107,7 @@
           class="logo-icon"
         />
         South Park Randomizer
-        <span class="version">(1.0.1)</span>
+        <span class="version">(1.1.0)</span>
       </h1>
     </div>
     <div class="modal-content">
@@ -119,7 +121,7 @@
           </a>
         </div>
         <div class="flex">
-          <a href="https://sp-studios-random-app.herokuapp.com" target="_self">
+          <a onclick="openInSameTab()">
             <i class="fa fa-repeat"></i>
           </a>
         </div>

@@ -1,0 +1,1 @@
+const openInSameTab = () => chrome.tabs.update({active: true, url: 'https://sp-studios-random-app.herokuapp.com'})
